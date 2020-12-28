@@ -1,1 +1,3 @@
 # StrategyGame
+
+Beschreibung
