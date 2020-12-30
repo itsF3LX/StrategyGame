@@ -1,0 +1,17 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class Exit : MonoBehaviour
+{
+    // Start is called before the first frame update
+    // public class ExitPartToUse {
+    //   public void Close(){
+    //     buttonImage.gameObject.SetActive(false);
+    // }
+
+    // public void Open(){
+    //     buttonImage.gameObject.SetActive(true);
+    // }
+    // }
+}
