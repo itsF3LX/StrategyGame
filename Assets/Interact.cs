@@ -11,7 +11,7 @@ public class Interact : MonoBehaviour
     public Tilemap buildings;
     public Tilemap lightup;
     public Tile gras;
-    public Tile light;
+    public Tile highlight;
     public Tile placeholder = null;
     public Tilemap controls;
     void Start()
@@ -45,7 +45,7 @@ public class Interact : MonoBehaviour
             coordinate.z = 0;
             coordinate.x = coordinate.x - 1;
             coordinate.y = coordinate.y - 2;
-            lightup.SetTile(coordinate, light);
+            lightup.SetTile(coordinate, highlight);
             if (placeholder != null){
                 controls.ClearAllTiles();
                 controls.SetTile(coordinate,placeholder);
