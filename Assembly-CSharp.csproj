@@ -36,11 +36,10 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
-     <Compile Include="Assets\Controls.cs" />
-     <Compile Include="Assets\Movement.cs" />
-     <Compile Include="Assets\Interact.cs" />
-     <Compile Include="Assets\Manager.cs" />
-     <Compile Include="Assets\DisplayBuilding.cs" />
+     <Compile Include="Assets\Scripts\Controls.cs" />
+     <Compile Include="Assets\Scripts\Movement.cs" />
+     <Compile Include="Assets\Scripts\Interact.cs" />
+     <Compile Include="Assets\Scripts\Manager.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.2.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
