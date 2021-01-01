@@ -60,10 +60,10 @@ public class Interact : MonoBehaviour
                 placeholder = null;
                 }
             }
-            if (fuckButtons == null){
-                buildings.SetTile(coordinate, null);
-                fuckButtons = farm;
-            }
+            // if (fuckButtons == null){
+            //     buildings.SetTile(coordinate, null);
+            //     fuckButtons = farm;
+            // }
         } else {
             Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             mouseWorldPos.x = mouseWorldPos.x - 0.5f;
