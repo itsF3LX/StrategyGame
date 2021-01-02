@@ -36,12 +36,18 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Barack.cs" />
+     <Compile Include="Assets\Scripts\PlayerManager.cs" />
      <Compile Include="Assets\Scripts\Controls.cs" />
+     <Compile Include="Assets\Scripts\ResourceManager.cs" />
      <Compile Include="Assets\Scripts\Movement.cs" />
+     <Compile Include="Assets\Scripts\BuildingManager.cs" />
      <Compile Include="Assets\Scripts\Interact.cs" />
+     <Compile Include="Assets\Scripts\MoveUp.cs" />
+     <Compile Include="Assets\Scripts\MoveDown.cs" />
+     <Compile Include="Assets\Scripts\CloseMenue.cs" />
      <Compile Include="Assets\Scripts\Manager.cs" />
-     <Compile Include="Assets\MoveUp.cs" />
-     <Compile Include="Assets\MoveDown.cs" />
+     <Compile Include="Assets\Scripts\Farm.cs" />
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.2.0f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>

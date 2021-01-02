@@ -6,6 +6,7 @@ using UnityEngine.Tilemaps;
 public class Interact : MonoBehaviour
 {
     // Start is called before the first frame update
+    public GameObject BuildingManager;
     public Grid grid;
     public Tilemap floor;
     public Tilemap buildings;
@@ -17,6 +18,7 @@ public class Interact : MonoBehaviour
     public Tile wheat;
     public Tile farm;
     public Tile fuckButtons;
+    public Tile barack;
     void Start()
     {
         
@@ -50,20 +52,20 @@ public class Interact : MonoBehaviour
                     saveSpot.x = saveSpot.x - 2;
                     Vector3Int LeftBottom = saveSpot;
                     if (buildings.GetTile(LeftBottom) == wheat || buildings.GetTile(LeftTop) == wheat || buildings.GetTile(RightBottom) == wheat || buildings.GetTile(RightTop) == wheat || buildings.GetTile(LeftBottom) == farm || buildings.GetTile(LeftTop) == farm || buildings.GetTile(RightBottom) == farm || buildings.GetTile(RightTop) == farm){
-                        fuckButtons = null;
                         buildings.SetTile(coordinate,placeholder);
                         placeholder = null;
                     }
                 } else {
-                fuckButtons = null;
-                buildings.SetTile(coordinate,placeholder);
+                    buildings.SetTile(coordinate,placeholder);
+                    if (placeholder == barack){
+                        BuildingManager.GetComponent<BuildingManager>().newBarack(coordinate);
+                    }
+                    if (placeholder == farm){
+                        BuildingManager.GetComponent<BuildingManager>().newFarm(coordinate);
+                    }
                 placeholder = null;
                 }
             }
-            // if (fuckButtons == null){
-            //     buildings.SetTile(coordinate, null);
-            //     fuckButtons = farm;
-            // }
         } else {
             Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             mouseWorldPos.x = mouseWorldPos.x - 0.5f;
